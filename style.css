@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+/* varables //////////////////////////////////////////////////////// */
+:root{
+    --btn-border-radious: 0 35px 0 35px;
+}
 
 /* Nav-bar ///////////////////////////////////////////////////////////*/
 header{
@@ -140,7 +144,7 @@ header{
 }
 
 .home-content{
-    max-width: 800px;
+    max-width: 700px;
     margin:0 0px;
 }
 
@@ -165,8 +169,10 @@ header{
 }
 
 .home-content p{
+    max-width: 600px;
     font-size: 18px;
     margin-top: 24px;
+    /* text-align: center; */
 }
 
 .home-img {
@@ -243,7 +249,7 @@ header{
     font-size: 17px;
     padding: 10px 24px;
     border: none;
-    border-radius: 15px;
+    border-radius: var(--btn-border-radious);
     color: #ffffff;
     background-color: #0c0936;
 }
@@ -292,7 +298,7 @@ header{
 }
 
 .about-head h1{
-    font-size: 60px;
+    font-size: 65px;
     text-align: center;
     color: #fff;
 }
@@ -306,7 +312,7 @@ header{
 }
 
 .about-details p{
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     color: #fff;
 }
@@ -325,6 +331,79 @@ header{
     width: 50px;
 }
 
+/* service //////////////////////////////////////////////////////////// */
+
+.project{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e6f3ff;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #e6f3ff;
+    
+}
+
+.card{
+    position: relative;
+    max-width: 280px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 0 10px #7c7b7bef;
+    transition: all 0.5s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card-titel{
+    margin: 10px;
+    font-size: 20px;
+}
+
+.card-body img{
+    position: relative;
+    width: 200px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.card-body p{
+    position: relative;
+    margin-top: 20px;
+}
+
+.card-btn button{
+    position: relative;
+    margin: 20px;
+    font-size: 20px;
+    padding: 8px 40px;
+    color: #fff;
+    background-color: #0a0c45;
+    border: none;
+    border-radius: var(--btn-border-radious);
+}
+
+.project-head{
+    padding-top: 50px;
+}
+
+.project-head h1{
+    font-size: 50px;
+    margin: 30px;
+    text-align: center;
+}
 
 /* project /////////////////////////////////////////////////////////*/
 
@@ -387,7 +466,7 @@ header{
     color: #fff;
     background-color: #0a0c45;
     border: none;
-    border-radius: 12px;
+    border-radius: var(--btn-border-radious);
 }
 
 .project-head{
@@ -736,7 +815,7 @@ header{
     color: #fff;
     background-color: #090262;
     border: none;
-    border-radius: 15px;
+    border-radius: var(--btn-border-radious);
     transition: all 0.3s;
 }
 
