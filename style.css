@@ -91,9 +91,8 @@ header{
 
 
 .nav-items{
-    display: none;
     position: relative;
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1px;
@@ -114,8 +113,7 @@ header{
 }
 
 .toggle-btn{
-    display: flex;
-    /* display: none; */
+    display: none;
     justify-content: end;
     align-items: end;
     width: 100%;
@@ -186,7 +184,7 @@ header{
 }
 
 .dropdown ul li a{
-    font-size: 17px;
+    font-size: 18px;
     text-decoration: none;
     transition: all 0.2s linear;
     font-weight: 500;
@@ -407,7 +405,7 @@ header{
 
 /* service //////////////////////////////////////////////////////////// */
 
-.project{
+.service{
     width: 100%;
     min-height: 100vh;
     background-color: #e6f3ff;
@@ -415,7 +413,17 @@ header{
     justify-content: center;
 }
 
-.project-card{
+.service-head{
+    padding-top: 50px;
+}
+
+.service-head h1{
+    font-size: 50px;
+    margin: 30px;
+    text-align: center;
+}
+
+.service-card{
     position: relative;
     display: flex;
     align-items: center;
@@ -425,9 +433,10 @@ header{
     
 }
 
-.card{
+.service-card .card{
     position: relative;
     max-width: 280px;
+    height: 300px;
     background-color: #fff;
     text-align: center;
     padding: 10px;
@@ -437,29 +446,34 @@ header{
     transition: all 0.5s ease;
 }
 
-.card:hover{
+.service-card .card .card:hover{
     transform: translateY(-10px);
 }
 
-.card-titel{
+.service-card .card .card-titel{
     margin: 10px;
     font-size: 20px;
 }
 
-.card-body img{
-    position: relative;
-    width: 200px;
-    margin-top: 15px;
-    border-radius: 15px;
+.service-card .card .card-titel i{
+    margin: 10px;
+    font-size: 30px;
 }
 
-.card-body p{
+.service-card .card .card-body p{
     position: relative;
     margin-top: 20px;
 }
 
-.card-btn button{
-    position: relative;
+.service-card .card-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.service-card .card-btn button{
+    position: absolute;
+    bottom: 0;
     margin: 20px;
     font-size: 20px;
     padding: 8px 40px;
@@ -469,15 +483,6 @@ header{
     border-radius: var(--btn-border-radious);
 }
 
-.project-head{
-    padding-top: 50px;
-}
-
-.project-head h1{
-    font-size: 50px;
-    margin: 30px;
-    text-align: center;
-}
 
 /* project /////////////////////////////////////////////////////////*/
 
@@ -1023,7 +1028,40 @@ header{
 
 
 /* Media Queries */
+@media (max-width: 970px){
+    /* nav-bar */
+    .logo{
+        margin-left: 40px;
+    }
+
+    .logo a{
+        font-size: 35px;
+    }
+
+    .nav-items a{
+        font-size: 16px;
+        margin-right: 45px;
+    }
+}
+
+
 @media (max-width: 768px) {
+
+    /* nav-bar */
+
+    .nav-items{
+        display: none;
+    }
+
+    .toggle-btn{
+        display: flex;
+    }
+
+
+
+
+/* contact */
+
     .contact-head {
         font-size: 28px;
     }
@@ -1050,6 +1088,8 @@ header{
     .contact-card-btn button {
         font-size: 18px;
     }
+
+
 }
 
 @media (max-width: 480px) {
