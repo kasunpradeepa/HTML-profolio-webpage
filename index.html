@@ -28,6 +28,22 @@
             </div> -->
         </div>
 
+        <div class="toggle-btn">
+            <!-- <a href=""><i class='bx bx-menu icon-menu '></i></a> -->
+            <i class='bx bx-menu icon-menu '></i>
+        </div>
+
+        <div class="dropdown hidden">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <section class="home" id="home">
@@ -381,6 +397,16 @@
             img.classList.toggle('img-animation',window.scrollY >0)
         });
 
+
+        // dropdown menu ///////////////////////////
+
+        const toggle_btn = document.querySelector('.icon-menu');
+        toggle_btn.addEventListener('click', function(){
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.toggle('hidden');
+
+        })
+
         // circle skills ///////////////////////////
 
         const circles = document.querySelectorAll('.circle');
@@ -402,6 +428,14 @@
             }
         })
         
+
+        // const cardadBtn = document.querySelectorAll('.card-btn');
+        // cardadBtn.forEach(btn=>{
+        //     btn.classList.add('hidden')
+        // })
+
+       
+
     </script>
 </body>
 </html>
