@@ -75,7 +75,7 @@
             </div>
             
             <div class="home-btn">
-                <button>Contact Me</button>
+                <button onclick="moveToSection()">Contact Me</button>
             </div>
         </div>
 
@@ -128,7 +128,7 @@
 
                 </div>
                 <div class="card-btn">
-                    <button>Contact Me</button>
+                    <button onclick="moveToSection()">Contact Me</button>
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                     </p>
                 </div>
                 <div class="card-btn">
-                    <button>Contact Me</button>
+                    <button onclick="moveToSection()">Contact Me</button>
                 </div>
             </div>
 
@@ -160,7 +160,7 @@
                     </p>
                 </div>
                 <div class="card-btn">
-                    <button>Contact Me</button>
+                    <button onclick="moveToSection()">Contact Me</button>
                 </div>
             </div>
         </div>    
@@ -273,8 +273,8 @@
 
                 <div class="card-body">
                     <img src="cal.png" alt="">
-                    <p>udfguyguy uyfuy uydfgusydfgusy uydfuy udyfusdy.uf 
-                        fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
+                    <p>This is simple calculator. I used HTML, CSS, JavaScript to
+                        create this calculator. It is working smoothly.
                     </p>
                     <div class="card-btn">
                         <button>view</button>
@@ -289,8 +289,8 @@
 
                 <div class="card-body">
                     <img src="form.png" alt="">
-                    <p>udfguyguy uyfuy uydfgusydfgusy uydfuy udyfusdy.uf 
-                        fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
+                    <p>This is simple login form. But this form has a register form.
+                        I used javascript to swith between that forms smoothly.
                     </p>
                     <div class="card-btn">
                         <button>view</button>
@@ -337,13 +337,13 @@
 
                 <div class="card-details">
                     <div class="details">
-                        <span>email : kasunpradeepa12345@gmail.com</span>
+                        <span><b>email :</b> kasunpradeepa12345@gmail.com</span>
                     </div>
                     <div class="details">
-                        <span>Telephone No : 0740375004</span>
+                        <span><b>Telephone No :</b> 0740375004</span>
                     </div>
                     <div class="details">
-                        <span>Address : Elahenpita Road, Horangalla, Thalgaswala.</span>
+                        <span><b>Address :</b> Elahenpita Road, Horangalla, Thalgaswala.</span>
                     </div>
                 </div>
             </div>
@@ -402,7 +402,7 @@
         });
 
 
-        // dropdown menu ///////////////////////////
+        // dropdown menu ////////////////////////////////////////////
 
         const toggle_btn = document.querySelector('.icon-menu');
         toggle_btn.addEventListener('click', function(){
@@ -411,7 +411,7 @@
 
         })
 
-        // circle skills ///////////////////////////
+        // circle skills ////////////////////////////////////////////////
 
         const circles = document.querySelectorAll('.circle');
         circles.forEach(elem=>{
@@ -489,6 +489,14 @@
 // // Initial load
 // refreshSkillBars();
 
+
+
+
+// MOVE SCROLL SECTION///////////////////////////////////
+
+function moveToSection() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
 
     </script>
 </body>

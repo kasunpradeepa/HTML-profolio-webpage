@@ -261,20 +261,19 @@ header{
     border: 6px solid #0a0c45;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: kp 3s infinite;
+    animation: border_changing 5s infinite;
 }
 
 
-.img-animation{
-    animation: kp 3s ;
-}
-
-@keyframes kp{
+@keyframes border_changing{
     0%{
-        border-color: blue;
+        border-color: #45a2f8;
+    }
+    50%{
+        border-color: #0a0c45;
     }
     100%{
-        border-color: #0a0c45;
+        border-color: #45a2f8;
     }
 }
 
@@ -331,6 +330,49 @@ header{
 
 .home-btn button:hover{
     background-color: var(--btn-hover-color-01);
+}
+
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack elements on smaller screens */
+        gap: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 35px; /* Adjusted font size */
+    }
+
+    .home-content h2 {
+        font-size: 28px; /* Adjusted font size */
+    }
+
+    .home-content p {
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .home-img img {
+        max-width: 200px;
+        max-height: 200px; /* Adjusted max width */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 28px; /* Adjusted font size */
+    }
+
+    .home-content h2 {
+        font-size: 22px; /* Adjusted font size */
+    }
+
+    .home-content p {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .home-img img {
+        max-width: 200px; /* Adjusted max width */
+    }
 }
 
 /* About //////////////////////////////////////////////////////*/
@@ -606,12 +648,11 @@ header{
 .skill-head {
     padding-top: 50px;
     text-align: center;
-    font-size: 32px;
 }
 
 .skill-head h1{
     color: #fff;
-    font-size: 50px;
+    font-size: 65px;
     margin: 30px;
     text-align: center;
 }
