@@ -13,6 +13,9 @@ html{
 /* varables //////////////////////////////////////////////////////// */
 :root{
     --btn-border-radious: 0 35px 0 35px;
+    --btn-color-01: #0c0936;
+    --btn-hover-color-01: #06298a;
+    
 }
 
 /* Nav-bar ///////////////////////////////////////////////////////////*/
@@ -258,6 +261,7 @@ header{
     border: 6px solid #0a0c45;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: kp 3s infinite;
 }
 
 
@@ -267,11 +271,10 @@ header{
 
 @keyframes kp{
     0%{
-        margin-bottom: -100px;
-        opacity: 0;
+        border-color: blue;
     }
     100%{
-        opacity: 1;
+        border-color: #0a0c45;
     }
 }
 
@@ -303,7 +306,7 @@ header{
 }
 
 .home-content .social-icon ul li a{
-    font-size: 20px;
+    font-size: 23px;
     color: #0c0936;
 }
 
@@ -322,11 +325,12 @@ header{
     border: none;
     border-radius: var(--btn-border-radious);
     color: #ffffff;
-    background-color: #0c0936;
+    background-color: var(--btn-color-01);
+    transition: all 0.5s ease;
 }
 
 .home-btn button:hover{
-    background-color: #06298a;
+    background-color: var(--btn-hover-color-01);
 }
 
 /* About //////////////////////////////////////////////////////*/
@@ -414,11 +418,11 @@ header{
 }
 
 .service-head{
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .service-head h1{
-    font-size: 50px;
+    font-size: 65px;
     margin: 30px;
     text-align: center;
 }
@@ -430,6 +434,7 @@ header{
     justify-content: center;
     gap: 50px;
     background-color: #e6f3ff;
+    margin-top: 50px;
     
 }
 
@@ -446,8 +451,16 @@ header{
     transition: all 0.5s ease;
 }
 
-.service-card .card .card:hover{
-    transform: translateY(-10px);
+.service-card .card:hover{
+    transform: translateY(-15px);
+}
+
+.service-card .card:hover > .card-titel i{
+    transform: scale(1.3);
+}
+
+.service-card .card:hover > .card-btn button{
+    background-color: var(--btn-hover-color-01);
 }
 
 .service-card .card .card-titel{
@@ -458,6 +471,11 @@ header{
 .service-card .card .card-titel i{
     margin: 10px;
     font-size: 30px;
+    border: 2px solid #090262;
+    padding: 8px;
+    border-radius: 50%;
+    color: blue;
+    transition: all 0.5s ease;
 }
 
 .service-card .card .card-body p{
@@ -478,10 +496,15 @@ header{
     font-size: 20px;
     padding: 8px 40px;
     color: #fff;
-    background-color: #0a0c45;
+    background-color: var(--btn-color-01);
     border: none;
     border-radius: var(--btn-border-radious);
+    transition: all 0.5s ease;
 }
+
+/* .service-card .card-btn button:hover{
+    background-color: var(--btn-hover-color-01);
+} */
 
 
 /* project /////////////////////////////////////////////////////////*/
@@ -499,9 +522,20 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
     gap: 50px;
     background-color: #e6f3ff;
     
+}
+
+.project-head{
+    padding-top: 50px;
+}
+
+.project-head h1{
+    font-size: 65px;
+    margin: 30px;
+    text-align: center;
 }
 
 .card{
@@ -516,9 +550,6 @@ header{
     transition: all 0.5s ease;
 }
 
-.card:hover{
-    transform: translateY(-10px);
-}
 
 .card-titel{
     margin: 10px;
@@ -530,6 +561,7 @@ header{
     width: 200px;
     margin-top: 15px;
     border-radius: 15px;
+    transition: all 0.5s ease;
 }
 
 .card-body p{
@@ -543,20 +575,25 @@ header{
     font-size: 20px;
     padding: 8px 40px;
     color: #fff;
-    background-color: #0a0c45;
+    background-color: var(--btn-color-01);
     border: none;
     border-radius: var(--btn-border-radious);
+    transition: all 0.5s ease;
 }
 
-.project-head{
-    padding-top: 50px;
+.card:hover > .card-body .card-btn button{
+    background-color: var(--btn-hover-color-01);
 }
 
-.project-head h1{
-    font-size: 50px;
-    margin: 30px;
-    text-align: center;
+.card:hover{
+    transform: translateY(-10px);
 }
+
+.card:hover > .card-body img{
+    transform: scale(1.1);
+}
+
+
 
 /* skills ////////////////////////////////////////////////////////////*/
 
@@ -892,14 +929,15 @@ header{
     padding: 15px;
     font-size: 20px;
     color: #fff;
-    background-color: #090262;
+    background-color: var(--btn-color-01);
     border: none;
     border-radius: var(--btn-border-radious);
-    transition: all 0.3s;
+    transition: all 0.5s ease;
+
 }
 
 .contact-card-btn button:hover {
-    background-color: #2218a6;
+    background-color: var(--btn-hover-color-01);
 }
 
 /* footer ///////////////////////////////////////////////////////////*/
@@ -1038,6 +1076,7 @@ header{
         font-size: 35px;
     }
 
+    
     .nav-items a{
         font-size: 16px;
         margin-right: 45px;
@@ -1056,6 +1095,7 @@ header{
     .toggle-btn{
         display: flex;
     }
+
 
 
 

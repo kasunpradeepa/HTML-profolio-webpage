@@ -121,9 +121,11 @@
                 <div class="card-body">
                     <h2>Digital Marketing</h2>
 
-                    <p>fusdy.uf 
-                        fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
+                    <p>With expertise in digital marketing, 
+                        I create targeted strategies to enhance 
+                        your online visibility and drive customer engagement.
                     </p>
+
                 </div>
                 <div class="card-btn">
                     <button>Contact Me</button>
@@ -137,8 +139,8 @@
                 <div class="card-body">
                     <h2>Web Development</h2>
 
-                    <p>fusdy.uf 
-                        fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
+                    <p> My web development services deliver 
+                        responsive and dynamic websites tailored to your business needs.
                     </p>
                 </div>
                 <div class="card-btn">
@@ -153,8 +155,8 @@
                 <div class="card-body">
                     <h2>Graphic Designing</h2>
 
-                    <p>fusdy.uf 
-                        fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
+                    <p>I provide professional graphic design solutions 
+                        that ensure your brand stands out with a unique and cohesive visual identity.
                     </p>
                 </div>
                 <div class="card-btn">
@@ -270,7 +272,7 @@
                 </div>
 
                 <div class="card-body">
-                    <img src="my2.JPG" alt="">
+                    <img src="cal.png" alt="">
                     <p>udfguyguy uyfuy uydfgusydfgusy uydfuy udyfusdy.uf 
                         fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
                     </p>
@@ -282,11 +284,11 @@
 
             <div class="card">
                 <div class="card-titel">
-                    <h2>Project 2</h2>
+                    <h2>Login Form</h2>
                 </div>
 
                 <div class="card-body">
-                    <img src="my2.JPG" alt="">
+                    <img src="form.png" alt="">
                     <p>udfguyguy uyfuy uydfgusydfgusy uydfuy udyfusdy.uf 
                         fhsfhsdf skhfksjdhfksd skdjfhskdjf;kjhfks hfksjdfh..
                     </p>
@@ -436,7 +438,57 @@
         //     btn.classList.add('hidden')
         // })
 
-       
+
+//        // Function to refresh the skill bars
+
+// function refreshSkillBars() {
+//     const circles = document.querySelectorAll('.circle');
+//     circles.forEach(elem => {
+//         var dots = elem.getAttribute("data-dots");
+//         var marked = elem.getAttribute("data-percent");
+//         var percent = Math.floor(dots * marked / 100);
+//         var points = "";
+//         var rotate = 360 / dots;
+
+//         // Clear existing points
+//         elem.innerHTML = "";
+
+//         for (let i = 0; i < dots; i++) {
+//             points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+//         }
+//         elem.innerHTML = points;
+
+//         const pointsMarked = elem.querySelectorAll('.points');
+//         for (let i = 0; i < percent; i++) {
+//             pointsMarked[i].classList.add('marked')
+//         }
+//     });
+// }
+
+// // Function to handle intersection events
+// function handleIntersection(entries, observer) {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             refreshSkillBars();
+//         }
+//     });
+// }
+
+// // Create an intersection observer
+// let observer = new IntersectionObserver(handleIntersection, {
+//     root: null, // Use the viewport as the root
+//     rootMargin: '0px',
+//     threshold: 0.1 // Trigger when 10% of the target is visible
+// });
+
+// // Observe each skill section
+// document.querySelectorAll('.circle').forEach(circle => {
+//     observer.observe(circle);
+// });
+
+// // Initial load
+// refreshSkillBars();
+
 
     </script>
 </body>
