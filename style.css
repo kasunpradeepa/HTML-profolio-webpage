@@ -349,31 +349,6 @@ header{
         text-align: center;
     }
 
-    /* .home-content h1 {
-        font-size: 38px;
-    }
-
-    .home-content h2 {
-        font-size: 30px; 
-    }
-
-    .home-content p {
-        font-size: 19px;
-    }
-
-    .home-img img {
-        max-width: 300px;
-        max-height: 300px; 
-    }
-
-    .home-content .social-icon ul li a{
-        font-size: 20px;
-    }
-
-    .home-btn button{
-        font-size: 15px;
-        padding: 8px 20px;
-    } */
 }
 
 @media (max-width: 768px) {
