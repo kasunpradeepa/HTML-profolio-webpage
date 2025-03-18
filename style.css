@@ -688,6 +688,7 @@ header{
     text-align: center;
     padding: 10px;
     margin: 10px;
+    height: 400px;
     border-radius: 10px;
     box-shadow: 5px 0 10px #7c7b7bef;
     transition: all 0.5s ease;
@@ -713,10 +714,12 @@ header{
 }
 
 .card-btn button{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 65px;
     margin: 20px;
     font-size: 20px;
-    padding: 8px 40px;
+    padding: 0.5rem 40px;
     color: #fff;
     background-color: var(--btn-color-01);
     border: none;
@@ -727,7 +730,9 @@ header{
 .card:hover > .card-body .card-btn button{
     background-color: var(--btn-hover-color-01);
 }
-
+.card-btn button:active{
+    transform: scale(0.9);
+}
 .card:hover{
     transform: translateY(-10px);
 }
