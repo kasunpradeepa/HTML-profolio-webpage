@@ -45,14 +45,14 @@ header{
     top: 0;
     left: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--light-bg);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-1);
     transition: var(--transition);
 }
 
 header.scrolled {
-    background: var(--light-bg);
+    background: transparent;
     box-shadow: var(--shadow-2);
 }
 
@@ -710,7 +710,7 @@ header.scrolled {
     line-height: 1.8;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 12px;
     height: 10px;
 }
@@ -723,7 +723,7 @@ header.scrolled {
 ::-webkit-scrollbar-track{
     background-color: #00000077;
     width: 50px;
-}
+} */
 
 @media (max-width: 1200px) {
     .about {
